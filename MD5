@@ -1,0 +1,16 @@
+aecd451c9535a5258025c647f8520d2f *DESCRIPTION
+356b9f491a4f51fb964a8ca6ec2d69a4 *NAMESPACE
+1874714225abe29da60f8d8eda1dab0d *NEWS.md
+a30bee54ca75a23daeeeaa5aae868645 *R/convert_files_to_pdf.R
+6cad2ace9f7e375e5d096c9f6e1eafb2 *R/extract_zip_files.R
+bba3197a3977537d616db6a38d722d48 *R/merge_pdfs.R
+00882c6f374076e9b403768e9f6469ee *R/run_app.R
+71b5b2f755763915a45ad85a12a91adf *README.md
+84559df3be87d2a8837e08337c308fe4 *inst/excel.vbs
+c4c4322739430e6bb0178111386f3e48 *inst/word_new.vbs
+6f39e9671c9eb1c8847d657e747db809 *man/convert_files_to_pdf.Rd
+bdeb69890690e3d3e87151d1b1abd8b6 *man/extract_zip_files.Rd
+b7a92564a8d91bbad9b68d7e03706a18 *man/merge_pdfs.Rd
+c359ed744643cf244792484cadd5d5c7 *man/run_app.Rd
+7e72f30492ae309aee32fa41d5bc0e46 *tests/testthat.R
+198d76cc117dabfc1db7e33dda814e29 *tests/testthat/test-run_app.R

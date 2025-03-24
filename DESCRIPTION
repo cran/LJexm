@@ -1,0 +1,18 @@
+Package: LJexm
+Title: Extract, Convert, and Merge 'pdf' Files from 'zip' Files
+Version: 1.0.4
+Authors@R: 
+    person("Lijin Arakkandathil Thekkathil", email = "lijin5673@gmail.com", role = c("aut", "cre"))
+Description: Extracts 'zip' files, converts 'Word' and 'Excel' documents to 'pdf' files using 'VBScript', and merges 'pdf' files into a single file. This package is only supported on 'Windows' due to 'VBScript' dependencies.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports: fs, pdftools, rstudioapi, utils
+RoxygenNote: 7.3.2
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2025-03-21 16:14:37 UTC; lijin
+Author: Lijin Arakkandathil Thekkathil [aut, cre]
+Maintainer: Lijin Arakkandathil Thekkathil <lijin5673@gmail.com>
+Repository: CRAN
+Date/Publication: 2025-03-24 11:50:06 UTC
