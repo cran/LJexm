@@ -19,6 +19,7 @@ run_app <- function(folder_path = NULL) {
   if (!is.null(folder_path) && dir.exists(folder_path)) {
     message("Processing folder: ", folder_path)
     extract_zip_files(folder_path)
+    convert_html_to_pdf(folder_path)
     convert_files_to_pdf(folder_path)
     merge_pdfs(folder_path)
     message("All tasks completed successfully!")

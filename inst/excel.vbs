@@ -66,6 +66,7 @@ For Each objSubFolder In objFolder.SubFolders
                         .Zoom = False ' Disable Zoom
                         .FitToPagesWide = 1 ' Fit to 1 page wide
                         .FitToPagesTall = 1 ' Let the height flow naturally
+                        .PrintArea = "" ' Clear the print area
                     End With
                     If Err.Number <> 0 Then
                         LogMessage "Error on sheet: " & objSheet.Name & " - " & Err.Description

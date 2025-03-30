@@ -1,57 +1,59 @@
-# LJexm
+# LJexm  
 
-**LJexm** is an 'R' package designed to automate the process of extracting zip files, converting 'Word' and 'Excel' files to 'pdf' files using 'VBScript', and merging 'pdf' files in a structured order.
+**LJexm** is an R package designed to automate the process of extracting ZIP files, converting 'Word', 'Excel', and 'HTML/HTM' files to PDFs, and merging PDF files in a structured order.  
 
-## Installation
+## Installation  
 
-To install 'LJexm' from source, run:
-
-```r
-# Install from source
-install.packages("LJexm", repos = NULL, type = "source")
-```
-
-## Usage
-
-Load the package and run the application:
+To install **LJexm** from source, run:  
 
 ```r
-library(LJexm)
-run_app()
-```
+# Install from source  
+install.packages("LJexm", repos = NULL, type = "source")  
+```  
 
-### **Error Handling**
-- Errors and status messages are **logged in `conversion_log.txt`** during execution.
-- After processing, **messages are printed using `message()`** in R.
+## Usage  
 
-#### **Manually Checking Errors (If Needed)**
-If you need to check errors manually before running the script, you can view the log file:
+Load the package and run the application:  
 
 ```r
-log_file <- file.path("path/to/your/folder", "conversion_log.txt")
-if (file.exists(log_file)) {
-  log_content <- readLines(log_file)
-  message(log_content, appendLF = TRUE)
-}
-```
+library(LJexm)  
+run_app()  
+```  
 
-## Features
-- Extracts 'zip' files in a given directory.
-- Converts `.docx` and `.xlsx` files to 'pdf' using 'VBScript'.
-- Merges 'pdf' files in alphabetical order, ensuring correct sequencing.
-- **Automatically logs errors and prints them in R using `message()`.**
-- Works in both 'RStudio' and Base R.
+### **Error Handling**  
+- Errors and status messages are **logged in `conversion_log.txt`** during execution.  
+- After processing, **messages are printed using `message()`** in R.  
 
-## Dependencies
-This package requires the following dependencies:
-- `fs`
-- `pdftools`
-- `rstudioapi`
-- `utils`
+#### **Manually Checking Errors (If Needed)**  
+If you need to check errors manually before running the script, you can view the log file:  
 
-These dependencies will be automatically installed when you install 'LJexm'.
+```r
+log_file <- file.path("path/to/your/folder", "conversion_log.txt")  
+if (file.exists(log_file)) {  
+  log_content <- readLines(log_file)  
+  message(log_content, appendLF = TRUE)  
+}  
+```  
 
-## License
+## Features  
+- Extracts ZIP files in a given directory.  
+- Converts `.docx` and `.xlsx` files to PDFs using VBScript.  
+- **Converts `.html` and `.htm` files to PDFs using `webshot` and `PhantomJS`.**  
+- Merges PDF files in alphabetical order, ensuring correct sequencing.  
+- **Case-insensitive processing** for `.docx`, `.xlsx`, `.pdf`, `.html`, and `.htm` files.  
+- **Automatically logs errors and prints them in R using `message()`.**  
+- Works in both RStudio and Base R.  
 
-This package is licensed under GPL-3.
+## Dependencies  
+This package requires the following dependencies:  
+- `fs`  
+- `pdftools`  
+- `rstudioapi`  
+- `utils`  
+- `webshot`  
 
+These dependencies will be automatically installed when you install **LJexm**.  
+
+## License  
+
+This package is licensed under **GPL-3**.

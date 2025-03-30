@@ -1,3 +1,18 @@
+# LJexm 1.0.5
+
+## New Features
+- Added support for converting **HTM and HTML** files to PDF using `webshot` and `PhantomJS`.
+- File extension handling is now case-insensitive, ensuring that .pdf, .htm, and .html files are processed correctly regardless of letter casing (e.g., .PDF, .HTM, .HTML).
+
+## Enhancements
+- **Excel Print Area Fix**: Resolved an issue where only the print area was being converted to PDF. Now, the entire sheet is properly included in the output.
+- Improved handling of missing PhantomJS installation—now automatically installs if not present.
+
+## Bug Fixes
+- Fixed minor inconsistencies in file handling during extraction and conversion.
+
+---
+
 # LJexm 1.0.4
 
 - Addressed note regarding possibly misspelled words in the **`DESCRIPTION`** file (i.e., **'PDFs'** and **'VBScript'**).

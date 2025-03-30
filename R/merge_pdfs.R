@@ -6,7 +6,10 @@ merge_pdfs <- function(folder_path) {
   subfolders <- fs::dir_ls(folder_path, type = "directory")
 
   for (subfolder in subfolders) {
-    pdf_files <- sort(fs::dir_ls(subfolder, glob = "*.pdf"))
+    pdf_files <- fs::dir_ls(subfolder)
+    pdf_files <- pdf_files[grepl("\\.pdf$", pdf_files, ignore.case = TRUE)]
+    pdf_files <- sort(pdf_files)
+
     output_pdf <- file.path(subfolder, paste0(basename(subfolder), "_merged.pdf"))
 
     if (length(pdf_files) >= 2) {
